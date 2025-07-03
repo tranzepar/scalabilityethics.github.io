@@ -1,22 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>Join the Movement</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Join the Movement - Scalability Ethics</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-tsi.html">About TSI</a></li>
-      <li><a href="scored-claims.html">Scored Claims</a></li>
-      <li><a href="join.html" class="active">Join the Movement</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Get Involved</h1>
-    <p>Sign up for future updates, contribute case studies, or join the global effort to build scalable ethics. Your insight can help shape the compass of tomorrow’s civilization.</p>
-  </main>
+    <header>
+        <h1>Join the Movement</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="library.html">Library of Scored Claims</a> |
+            <a href="about-tsi.html">About TSI</a> |
+            <a href="join.html">Join the Movement</a>
+        </nav>
+    </header>
+    <main>
+        <h2>We Want to Hear from You</h2>
+        <p>Share your thoughts, critiques, or support using the comment section below.</p>
+
+        <!-- Disqus integration -->
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = "join-page";
+        };
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://YOUR_DISQUS_SHORTNAME_HERE.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the comments.</noscript>
+    </main>
+    <footer>
+        <p>&copy; 2025 Scalability Ethics</p>
+    </footer>
 </body>
 </html>
